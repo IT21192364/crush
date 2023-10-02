@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <h1 style="text-align: center;color: maroon; text-decoration: underline;">Check Your Crush</h1>
+    <br>
+    <div style="text-align: center;">
+    <img style="height: 15%; width: 15%; border-radius: 50%;" src="https://w7.pngwing.com/pngs/4/736/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon-thumbnail.png">
+    </div>
+    <br>
+    <label><h2 id="id" style="text-align: center;">Type your Name</h2></label>
+    <div style="text-align: center;"><input id="input" style="text-align: center;" type="text"> 
+        <br><br>
+    <button style="padding-right: 2% ;padding-left: 2% ; font-size: 4vh; color: brown; background-color: grey; border: 2px solid black; border-radius: 10%;" onclick="playmusic()">Next</button>
+    <audio  id="myaudio" src="aduio.mp3"></audio>
+    </div>
+    <br>
+    <script>
+        
+        function playmusic(){
+            let audio=document.getElementById("myaudio");
+            let it=document.getElementById("input").value;
+            if(it!==""){
+            audio.play();
+        }
+        }
+    </script>
+</body>
+</html>
